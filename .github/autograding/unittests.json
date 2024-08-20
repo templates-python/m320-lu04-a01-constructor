@@ -1,0 +1,26 @@
+[
+  {
+    "name": "test_initialization",
+    "function": "test_initialization",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_type_set_get",
+    "function": "test_type_set_get",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_size_get_set",
+    "function": "test_size_get_set",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_color_get_set",
+    "function": "test_color_get_set",
+    "timeout": 10,
+    "points": 1
+  }
+]
