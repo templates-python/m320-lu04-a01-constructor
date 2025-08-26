@@ -1,5 +1,5 @@
 {
-  "files": ["bottle.py"],
+  "files": ["bicycle.py"],
   "ignore" : [],
-  "max": 20
+  "max": 5
 }
