@@ -1,28 +1,31 @@
+"""
+a class representing a bike
+"""
 class Bicycle:
     """
     A bicycle with some attributes and methods
 
     Attributes
     ----------
-    _type: str
+    _biketype: str
     _size: int
     _color: str
     """
 
-    def __init__(self, type='mountainbike', size=48):
+    def __init__(self, biketype='mountainbike', size=48):
         """
-        Constructor with type and size.
+        Constructor with biketype and size.
         """
-        self._type = type
+        self._biketype = biketype
         self._size = size
         self._color = 'gray'
 
     @property
-    def type(self):
+    def biketype(self):
         """
-        Gets the type of this bicycle.
+        Gets the biketype of this bicycle.
         """
-        return self._type
+        return self._biketype
 
     @property
     def size(self):
@@ -38,12 +41,12 @@ class Bicycle:
         """
         return self._color
 
-    @type.setter
-    def type(self, type):
+    @biketype.setter
+    def biketype(self, biketype):
         """
-        Sets the type of this bicycle.
+        Sets the biketype of this bicycle.
         """
-        self._type = type
+        self._biketype = biketype
 
     @size.setter
     def size(self, size):
@@ -59,28 +62,28 @@ class Bicycle:
         """
         self._color = color
 
-    def print(self):
+    def __str__(self):
         """
-        prints a human-readable representation of the object.
+        returns a human-readable representation of the object.
         :return:
         """
-        print(
+        return(
             f'Fahrrad:\n'
-            f'\tArt:            {self._type}\n'
+            f'\tArt:            {self._biketype}\n'
             f'\tRahmengrösse:   {self._size}\n'
             f'\tFarbe:          {self._color}'
         )
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Aufgabe 1
     bicycle = Bicycle()
     bicycle.print()
     #
-    bicycle = Bicycle(type='racebike')
+    bicycle = Bicycle(biketype='racebike')
     bicycle.print()
     #
-    bicycle = Bicycle(type='citybike', size='42')
+    bicycle = Bicycle(biketype='citybike', size='42')
     bicycle.print()
     #
     # Aufgabe 2

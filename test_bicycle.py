@@ -5,14 +5,14 @@ class TestBicycle:
 
     def test_initialization(self):
         bike = Bicycle()
-        assert bike.type == 'mountainbike'
+        assert bike.biketype == 'mountainbike'
         assert bike.size == 48
         assert bike.color == 'gray'
 
     def test_type_set_get(self):
         bike = Bicycle()
-        bike.type = 'roadbike'
-        assert bike.type == 'roadbike'
+        bike.biketype = 'roadbike'
+        assert bike.biketype == 'roadbike'
 
     def test_size_get_set(self):
         bike = Bicycle()
